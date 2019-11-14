@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jeopardy
+  labels:
+    app: jeopardy
+    version: 1.0.0
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: jeopardy
+  template:
+    metadata:
+      labels:
+        app: jeopardy
+        version: 1.0.0
+    spec:
+      containers:
+      - name: jeopardy
+        image: jeopardy
+        ports:
+        - containerPort: 80
+        resources:
+          requests:
+            memory: "128Mi"
+            cpu: "250m"
+          limits:
+            memory: "256Mi"
+            cpu: "500m"
