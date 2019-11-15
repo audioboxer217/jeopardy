@@ -16,9 +16,11 @@ spec:
         app: jeopardy
         version: 1.0.0
     spec:
+      imagePullSecrets:
+      - name: git-pkg-regcred
       containers:
       - name: jeopardy
-        image: jeopardy
+        image: docker.pkg.github.com/audioboxer217/jeopardy/jeopardy:1.0.0
         ports:
         - containerPort: 80
         resources:
