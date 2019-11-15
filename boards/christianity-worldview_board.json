@@ -1,0 +1,380 @@
+{
+    "double-jeopardy": [
+        {
+            "name": "Bible Facts & History",
+            "questions": [
+                {
+                    "answer": "Who is Luke?",
+                    "question": "A traveling companion of Paul, and the author of NT works including one of the Gospels and Acts.",
+                    "value": 200
+                },
+                {
+                    "answer": "What is Greek?",
+                    "question": "Though Jesus' native tongue was Aramaic, the NT accounts of him were written in this language.",
+                    "value": 400
+                },
+                {
+                    "answer": "True",
+                    "question": "True/False: The NT documents were written in a language which, at the time of the NT, had no quotation marks or equivalent kinds of punctuation.",
+                    "value": 600
+                },
+                {
+                    "answer": "What is Genesis, Exodus, Leviticus, Numbers, and Deuteronomy?",
+                    "question": "These five books of the Bible were written by Moses.",
+                    "value": 800
+                },
+                {
+                    "answer": "Who is unknown?",
+                    "question": "The author of the book of Hebrews.",
+                    "value": 1000
+                }
+            ]
+        },
+        {
+            "name": "Christian Slang",
+            "questions": [
+                {
+                    "answer": "What is Infallibility?",
+                    "question": "The idea that Scripture is not able to lead us astray in matters of faith and practice",
+                    "value": 200
+                },
+                {
+                    "answer": "What is Faith?",
+                    "question": "Confidence, trust, or dependence based on reason",
+                    "value": 400
+                },
+                {
+                    "answer": "What is \"Lord & Savior?\"",
+                    "question": "The primary title for the Roman emperor also used by the New Testament authors to describe Jesus Christ.",
+                    "value": 600
+                },
+                {
+                    "answer": "What is Biblical Inerrancy?",
+                    "question": "The doctrine that Scripture in the original manuscripts doesn’t affirm anything contrary to fact",
+                    "value": 800
+                },
+                {
+                    "answer": "What is the Hypostatic Union?",
+                    "question": "The doctrine that Christ was both fully man and fully God.",
+                    "value": 1000
+                }
+            ]
+        },
+        {
+            "name": "Bible Characters",
+            "questions": [
+                {
+                    "answer": "Who is Samuel?",
+                    "question": "This OT prophet heard God’s voice as a young boy while serving under Eli, and later anointed Israel’s first king, Saul",
+                    "value": 200
+                },
+                {
+                    "answer": "Who are the Pharisees?",
+                    "question": "This group of people were religious purists committed to preserving and obeying the law meticulously.  They were orthodox in their beliefs, which included immortality, resurrection, angels, and demons.",
+                    "value": 400
+                },
+                {
+                    "answer": "What is the Sanhedrin?",
+                    "question": "This group was the Jewish ruling council during New Testament times",
+                    "value": 600,
+                    "daily-double": true
+                },
+                {
+                    "answer": "Who are the Sadducees?",
+                    "question": "This group of people denied the resurrection of the dead, the immortality of the soul, and accepted only the first 5 books of the OT. They were comprised of only the rich.",
+                    "value": 800
+                },
+                {
+                    "answer": "Who are Jude & James?",
+                    "question": "These men were the half-brothers of Jesus.",
+                    "value": 1000
+                }
+            ]
+        },
+        {
+            "name": "Religions & Worldviews",
+            "questions": [
+                {
+                    "answer": "What is Postmodernism?",
+                    "question": "This worldview holds that there is no Objective Truth.",
+                    "value": 200
+                },
+                {
+                    "answer": "What is Pantheism?",
+                    "question": "The belief that the world and God are identical.",
+                    "value": 400
+                },
+                {
+                    "answer": "What is Scientism?",
+                    "question": "The naturalistic view of knowledge that holds that \"science is the measure of all things, of what is that it is, and of what is not that it is not.\"",
+                    "value": 600
+                },
+                {
+                    "answer": "What is Islam?",
+                    "question": "This Abrahamic, monotheistic religion believes that there is only one God, and that Muhammad is a messenger of God.",
+                    "value": 800
+                },
+                {
+                    "answer": "What is Buddism?",
+                    "question": "The teaching that life is permeated with suffering caused by desire, that suffering ceases when desire ceases, and that enlightenment obtained through right conduct and wisdom and meditation releases one from desire and suffering and rebirth.",
+                    "value": 1000
+                }
+            ]
+        },
+        {
+            "name": "Video Games",
+            "questions": [
+                {
+                    "answer": "Who is Link?",
+                    "question": "He's the protagonist in the classic RPG \"The Legend of Zelda.\"",
+                    "value": 200
+                },
+                {
+                    "answer": "Who is Sonic?",
+                    "question": "This video game character is blue, collects rings, and goes really fast.",
+                    "value": 400
+                },
+                {
+                    "answer": "Who is Mario?",
+                    "question": "This mustachioed plumber is tasked with saving the princess of the Mushroom Kingdom.",
+                    "value": 600
+                },
+                {
+                    "answer": "What is Pong?",
+                    "question": "This simple but popular video game is often mistakenly considered the first video game due to its close resemblence of the original.",
+                    "value": 800
+                },
+                {
+                    "answer": "What is Mortal Kombat?",
+                    "question": "This fighting game inspired the modern rating system due to its graphic violence.",
+                    "value": 1000
+                }
+            ]
+        },
+        {
+            "name": "Logos",
+            "questions": [
+                {
+                    "answer": "What is the Flash?",
+                    "image": "images/flash.png",
+                    "question": "",
+                    "value": 200
+                },
+                {
+                    "answer": "What is Nike?",
+                    "image": "images/nike.jpg",
+                    "question": "",
+                    "value": 400
+                },
+                {
+                    "answer": "What is Target?",
+                    "image": "images/target.jpg",
+                    "question": "",
+                    "value": 600,
+                    "daily-double": true
+                },
+                {
+                    "answer": "What is Starbucks?",
+                    "image": "images/starbucks.jpg",
+                    "question": "",
+                    "value": 800
+                },
+                {
+                    "answer": "What is Toyota?",
+                    "image": "images/toyota.jpg",
+                    "question": "",
+                    "value": 1000
+                }
+            ]
+        }
+    ],
+    "final-jeopardy": {
+        "answer": "Romans",
+        "category": "The Bible",
+        "question": "Which of the following was authored by one who is recognized as an apostle? Acts, Mark, Luke, Romans, Hebrews, or Jude"
+    },
+    "jeopardy": [
+        {
+            "name": "Bible Facts & History",
+            "questions": [
+                {
+                    "answer": "What is Exodus?",
+                    "question": "This OT Book describes Israel’s deliverance from Egypt, the constitution of the people of Israel through covenant law, and instructions for the tabernacle – the place of God’s presence.",
+                    "value": 100
+                },
+                {
+                    "answer": "What is 66?",
+                    "question": "The number of books in the entire bible.",
+                    "value": 200
+                },
+                {
+                    "answer": "What is 1600 years?",
+                    "question": "The bible was written over a period of approximately this many years.",
+                    "value": 300
+                },
+                {
+                    "answer": "What is Mark?",
+                    "question": "Of the four gospels, this one was most likely written first.",
+                    "value": 400
+                },
+                {
+                    "answer": "Who is Mark?",
+                    "question": "One of these men was NOT one of the original 12 disciples. James, Mark, Nathanael, or Thaddaeus",
+                    "value": 500
+                }
+            ]
+        },
+        {
+            "name": "Christian Slang",
+            "questions": [
+                {
+                    "answer": "Grace",
+                    "question": "God's goodness toward those who deserve only punishment.",
+                    "value": 100
+                },
+                {
+                    "answer": "What is the Trinity?",
+                    "question": "The doctrine that God eternally exists as three persons - Father, Son, and Holy Spirit - and each person is fully God, and there is one God.",
+                    "value": 200
+                },
+                {
+                    "answer": "What is Biblical Inspiration?",
+                    "question": "A term referring to the fact that the words of Scripture are spoken by God, or \"God-breathed.\"",
+                    "value": 300
+                },
+                {
+                    "answer": "What is Apologetics?",
+                    "question": "The branch of Christian theology which seeks to provide a rational justification for the truth claims of the Christian faith.",
+                    "value": 400
+                },
+                {
+                    "answer": "What is Exegesis?",
+                    "question": "The process of interpreting a text of Scripture for its application in today’s culture.",
+                    "value": 500
+                }
+            ]
+        },
+        {
+            "name": "Bible Characters",
+            "questions": [
+                {
+                    "answer": "Who is Moses?",
+                    "question": "This person led the Israelites out of Egypt.",
+                    "value": 100
+                },
+                {
+                    "answer": "What is Saul?",
+                    "question": "Before changing his name, Paul went by this name.",
+                    "value": 200
+                },
+                {
+                    "answer": "Who is John the Baptist?",
+                    "question": "This NT figure fortold of the coming Christ and later baptized Christ.",
+                    "value": 300,
+                    "daily-double": true
+                },
+                {
+                    "answer": "Who is Abraham?",
+                    "question": "This OT figure was tested by being told by God to sacrifice his promised son.",
+                    "value": 400
+                },
+                {
+                    "answer": "Who is Stephen?",
+                    "question": "False accusations led to the stoning of this early Christian leader by the Sanhedrin & \"a young man named Saul.\"",
+                    "value": 500
+                }
+            ]
+        },
+        {
+            "name": "Religion & Worldviews",
+            "questions": [
+                {
+                    "answer": "What is Mormonism?",
+                    "question": "This religion, founded by Joseph Smith in 1830, headquarters in Salt Lake City, Utah.",
+                    "value": 100
+                },
+                {
+                    "answer": "What is Judaism?",
+                    "question": "This religion has its spiritual/ethical principles primarily based in the first 5 books of the Hebrew bible",
+                    "value": 200
+                },
+                {
+                    "answer": "What is Atheism?",
+                    "question": "This worldview holds the belief that \"God does not exist.\"",
+                    "value": 300
+                },
+                {
+                    "answer": "What is Agnosticism?",
+                    "question": "This worldview is characterized by the claim to not know ether or not God exists.",
+                    "value": 400
+                },
+                {
+                    "answer": "What is Naturalism?",
+                    "question": "This worldview holds that the physical universe is all that exists.",
+                    "value": 500
+                }
+            ]
+        },
+        {
+            "name": "Sports",
+            "questions": [
+                {
+                    "answer": "Who are the Patriots and the Steelers?",
+                    "question": "These two NFL teams have won the most Super Bowls.",
+                    "value": 200
+                },
+                {
+                    "answer": "Who are the Cubs?",
+                    "question": "This MLB team won the World Series in 1907, 1908, and 2016.",
+                    "value": 400
+                },
+                {
+                    "answer": "Who is Usain Bolt?",
+                    "question": "This man is considered to be the \"Fastest Man Alive\" because he holds the world record for both the 100 and 200 meter sprints.",
+                    "value": 600
+                },
+                {
+                    "answer": "What is Baseball/Softball?",
+                    "question": "This sport, played between two teams of nine on a field with a diamond-shaped circuit of four bases, was added to the 2020 Summer Olympics",
+                    "value": 800,
+                    "daily-double": true
+                },
+                {
+                    "answer": "Who is Brazil?",
+                    "question": "This country has won the most FIFA World Cups and has competed in every tournament.",
+                    "value": 1000
+                }
+            ]
+        },
+        {
+            "name": "Movies & TV",
+            "questions": [
+                {
+                    "answer": "What is Jon & Kate Plus 8?",
+                    "question": "This reality TV Show was about Two parents raising their sextuplets and two older children.",
+                    "value": 100
+                },
+                {
+                    "answer": "Who is Heath Ledger?",
+                    "question": "This actor played the role of the Joker in The Dark Knight",
+                    "value": 200
+                },
+                {
+                    "answer": "Who is Colton Underwood?",
+                    "question": "He was \"The Bachelor\" in the latest season.",
+                    "value": 300
+                },
+                {
+                    "answer": "Who are Monica, Rachel, Phoebe, Joey, Chandler, and Ross?",
+                    "question": "They are the 6 main characters of the TV sitcom, \"Friends.\"",
+                    "value": 400
+                },
+                {
+                    "answer": "Who is Oprah?",
+                    "question": "The name of this TV personality, known for her daytime talk show, comes from an accidental misspelling of an obsure Biblical name.",
+                    "value": 500
+                }
+            ]
+        }
+    ]
+}
