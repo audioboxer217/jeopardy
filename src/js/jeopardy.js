@@ -1,3 +1,14 @@
+function loadFile(filePath) {
+    var result = null;
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.open("GET", filePath, false);
+    xmlhttp.send();
+    if (xmlhttp.status==200) {
+      result = xmlhttp.responseText;
+    }
+    return result;
+  }
+
 $(function(){
     $('#game-load-modal').modal('show');
     chooseTheme = Math.random() < 0.5;
@@ -7,15 +18,20 @@ $(function(){
 	else {
 		openingRockTheme.play();
         // openingTheme.play();
-	}
-    $('#game-load-input-button').click(function(){
-        var file = $('#input-file').prop('files')[0];
-        if ($('#input-file').val() !== '') {
-            var reader = new FileReader();
-            reader.readAsText(file);
-            reader.onload = function(){
-                var fileText = reader.result;
-                var data = $.parseJSON(fileText);
+    }
+    // Commented sections for Splash-Screen, file-based load.
+    // Temp disabled in favor of auto-loading a particular board.
+    // $('#game-load-input-button').click(function(){
+        // var file = $('#input-file').prop('files')[0];
+        // if ($('#input-file').val() !== '') {
+        var file = loadFile('./boards/christianity-worldview_board.json');
+        if (file !== '') {
+            // var reader = new FileReader();
+            // reader.readAsText(file);
+            // reader.onload = function(){
+                // var fileText = reader.result;
+                // var data = $.parseJSON(fileText);
+                var data = $.parseJSON(file);
                 jsonData = data;
                 currentBoard = jsonData[rounds[currentRound]];
                 $("#player-1-name").empty().text(playerTranslation[1]);
@@ -30,12 +46,11 @@ $(function(){
                 boardFillSound.play();
                 $('#game-load-modal').modal('hide');
             }
-            reader.onerror = function(e){
-                $('#game-load-error').text("Error: "+ e).show();
-            };
-
-        }
-    });
+            // reader.onerror = function(e){
+            //     $('#game-load-error').text("Error: "+ e).show();
+            // };
+        // }
+    // });
     $('#kill-music-button').click(function(){
         openingTheme.pause();
         openingTheme.currentTime = 0;
