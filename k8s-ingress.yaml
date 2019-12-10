@@ -1,15 +1,24 @@
 apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
-  name: jeopardy
   annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /$2
-    nginx.ingress.kubernetes.io/app-root: /
+    kubernetes.io/ingress.class: traefik
+    traefik.frontend.rule.type: PathPrefixStrip
+  name: jeopardy
+  namespace: jeopardy
 spec:
   rules:
-  - http:
+  - host: raspberrypi
+    http:
       paths:
-      - path: /jeopardy(/|$)(.*)
-        backend:
+      - backend:
           serviceName: jeopardy
           servicePort: 3000
+        path: /jeopardy
+  - host: audioboxer.onthewifi.com
+    http:
+      paths:
+      - backend:
+          serviceName: jeopardy
+          servicePort: 3000
+        path: /jeopardy
