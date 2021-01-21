@@ -1,4 +1,5 @@
-FROM nginx:alpine
+ARG ARCH=
+FROM ${ARCH}nginx:alpine
 
 MAINTAINER Scott Eppler <audioboxer217@gmail.com>
 

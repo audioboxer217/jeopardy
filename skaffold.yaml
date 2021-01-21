@@ -2,9 +2,28 @@ apiVersion: skaffold/v1
 kind: Config
 metadata:
   name: jeopardy
+profiles:
+- name: amd64
+  build:
+    artifacts:
+    - image: seppler/jeopardy
+- name: arm7
+  build:
+    artifacts:
+    - image: seppler/jeopardy
+      custom:
+        buildCommand: docker buildx build --platform linux/arm/v7 --tag $IMAGE --push $BUILD_CONTEXT
+- name: arm64
+  build:
+    artifacts:
+    - image: seppler/jeopardy
+      custom:
+        buildCommand: docker buildx build --platform linux/arm64 --tag $IMAGE --push $BUILD_CONTEXT
 build:
   artifacts:
   - image: seppler/jeopardy
+    custom:
+      buildCommand: docker buildx build --platform linux/amd64,linux/arm/v7,linux/arm64 --tag $IMAGE --push $BUILD_CONTEXT
 deploy:
   kubectl:
     manifests:
