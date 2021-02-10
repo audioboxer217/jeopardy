@@ -16,9 +16,27 @@ spec:
         app: jeopardy
         version: 1.0.0
     spec:
+      initContainers:
+      - name: init-source
+        image: busybox
+        command: 
+        - sh
+        - -c
+        - wget -c https://github.com/audioboxer217/jeopardy/archive/${APP_VERSION}.tar.gz -O - | tar -xz --strip-components=2 -C /usr/share/nginx/html/jeopardy jeopardy-${APP_VERSION}/src
+        env:
+        - name: APP_VERSION
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.labels['version']
+        volumeMounts:
+        - name: src-code
+          mountPath: /usr/share/nginx/html/jeopardy
       containers:
       - name: jeopardy
-        image: seppler/jeopardy:1.0.0
+        image: nginx:alpine
+        volumeMounts:
+        - name: src-code
+          mountPath: /usr/share/nginx/html/jeopardy
         ports:
         - containerPort: 80
         resources:
@@ -28,3 +46,6 @@ spec:
           limits:
             memory: "256Mi"
             cpu: "500m"
+      volumes:
+      - name: src-code
+        emptyDir: {}
