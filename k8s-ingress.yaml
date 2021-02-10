@@ -5,10 +5,9 @@ metadata:
     kubernetes.io/ingress.class: traefik
     # traefik.frontend.rule.type: PathPrefixStrip
   name: jeopardy
-  namespace: jeopardy
 spec:
   rules:
-  - host: codaubuntu
+  - host: raspberrypi
     http:
       paths:
       - backend:
