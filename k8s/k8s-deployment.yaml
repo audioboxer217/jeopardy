@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: jeopardy
+  namespace: jeopardy
   labels:
     app: jeopardy
     version: 1.0.0

@@ -4,6 +4,7 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: traefik
   name: jeopardy
+  namespace: jeopardy
 spec:
   rules:
   - host: raspberrypi
